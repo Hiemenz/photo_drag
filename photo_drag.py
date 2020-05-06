@@ -3,7 +3,7 @@ import time
 
 # google tab
 first_tab = (158, 10)
-left_side = (187, 583)
+left_side = (324, 184)
 
 # photo folder tab
 second_tab = (327, 6)
