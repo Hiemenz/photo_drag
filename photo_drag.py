@@ -9,7 +9,7 @@ left_side = (187, 583)
 second_tab = (327, 6)
 right_side_one = (900, 401)
 right_side_two = (866, 401)
-
+print(pyautogui.position())
 print(pyautogui.size())
 
 print('Clicking the first tab Google Photos')
@@ -31,6 +31,6 @@ pyautogui.moveTo(right_side_two)
 
 pyautogui.dragTo(left_side, duration = 2)
 
-print(pyautogui.position())
+
 
 
