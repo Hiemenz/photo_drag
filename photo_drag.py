@@ -26,7 +26,7 @@ pyautogui.click(right_side)
 
 pyautogui.hotkey("ctrlleft", "a")
 time.sleep(2)
-pyautogui.moveTo(left_side, duration = 2)
+pyautogui.dragTo(left_side, duration = 2)
 
 print(pyautogui.position())
 
