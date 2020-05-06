@@ -7,7 +7,8 @@ left_side = (187, 583)
 
 # photo folder tab
 second_tab = (327, 6)
-right_side = (900, 401)
+right_side_one = (900, 401)
+right_side_two = (866, 401)
 
 print(pyautogui.size())
 
@@ -22,10 +23,12 @@ print('Clicking the second tab Photos Folder')
 pyautogui.click(second_tab)
 time.sleep(1)
 print('Selecting all the photos')
-pyautogui.click(right_side)
+pyautogui.click(right_side_one)
 
 pyautogui.hotkey("ctrlleft", "a")
 time.sleep(5)
+pyautogui.moveTo(right_side_two) 
+
 pyautogui.dragTo(left_side, duration = 2)
 
 print(pyautogui.position())
