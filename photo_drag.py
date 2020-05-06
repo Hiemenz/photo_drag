@@ -27,6 +27,7 @@ print('Selecting all the photos')
 pyautogui.click(right_side)
 
 pyautogui.hotkey("ctrlleft", "a")
+time.sleep(2)
 pyautogui.moveTo(left_side_drag)
 
 print(pyautogui.position())
