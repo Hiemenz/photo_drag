@@ -38,9 +38,11 @@ def job():
     time.sleep(10)
     
     pyautogui.moveTo(first_tab) 
+    time.sleep(1)
     pyautogui.click(first_tab)
     time.sleep(1)
-    pyautogui.moveTo(second_tab)    
+    pyautogui.moveTo(second_tab)   
+    time.sleep(1) 
     pyautogui.click(second_tab)
 
 def delete():
