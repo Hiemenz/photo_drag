@@ -32,10 +32,32 @@ def job():
     time.sleep(5)
     pyautogui.moveTo(right_side_two) 
 
-    pyautogui.dragTo(left_side, duration = 2)
+    pyautogui.dragTo(left_side, duration = 4)
+
+
+    time.sleep(2)
+    pyautogui.click(first_tab)
+    pyautogui.click(second_tab)
+
+def delete():
+    print('Clicking the second tab Photos Folder')
+    pyautogui.click(second_tab)
+    time.sleep(1)
+    print('Selecting all the photos')
+    pyautogui.click(right_side_one)
+
+    pyautogui.hotkey("ctrlleft", "a")
+    time.sleep(1)
+    pyautogui.hotkey("delete")
+    time.sleep(2)
+
+    pyautogui.hotkey('enter')
+
+    time.sleep(60)
+
 
 # schedule.every().day.at("19:30").do(job)
-schedule.every().day.at("00:13").do(job)
+schedule.every().day.at("00:30").do(job)
 
 
 while True:
