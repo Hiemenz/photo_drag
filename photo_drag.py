@@ -4,7 +4,7 @@ import pyautogui
 import time
 
 # google tab
-first_tab = (158, 10)
+first_tab = (211, 7)
 left_side = (324, 184)
 
 # photo folder tab
