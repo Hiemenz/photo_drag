@@ -20,7 +20,7 @@ def job():
     time.sleep(1)
     print('Reloading the window')
     pyautogui.hotkey("ctrlleft", "r")
-    time.sleep(40)
+    time.sleep(10)
 
     print('Clicking the second tab Photos Folder')
     pyautogui.click(second_tab)
@@ -62,15 +62,15 @@ def delete():
     time.sleep(60)
 
 
-# schedule.every().day.at("19:30").do(job)
+schedule.every().day.at("19:30").do(job)
 # schedule.every().day.at("00:33").do(job)
 
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(20)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
-job()
+# job()
 
 # time.sleep(8)
 # delete()
