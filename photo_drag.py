@@ -9,8 +9,8 @@ left_side = (324, 184)
 
 # photo folder tab
 second_tab = (327, 6)
-right_side_one = (900, 131)
-right_side_two = (866, 131)
+right_side_one = (900, 140)
+right_side_two = (866, 140)
 print(pyautogui.position())
 print(pyautogui.size())
 
@@ -20,7 +20,7 @@ def job():
     time.sleep(1)
     print('Reloading the window')
     pyautogui.hotkey("ctrlleft", "r")
-    time.sleep(4)
+    time.sleep(10)
 
     print('Clicking the second tab Photos Folder')
     pyautogui.click(second_tab)
@@ -35,9 +35,10 @@ def job():
     pyautogui.dragTo(left_side, duration = 4)
 
 
-    time.sleep(2)
-    pyautogui.click(first_tab)
+    time.sleep(10)
+    
     pyautogui.click(second_tab)
+    pyautogui.click(first_tab)
 
 def delete():
     print('Clicking the second tab Photos Folder')
@@ -57,7 +58,7 @@ def delete():
 
 
 # schedule.every().day.at("19:30").do(job)
-schedule.every().day.at("00:30").do(job)
+schedule.every().day.at("00:33").do(job)
 
 
 while True:
