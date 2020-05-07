@@ -58,9 +58,11 @@ def delete():
 
 
 # schedule.every().day.at("19:30").do(job)
-schedule.every().day.at("00:33").do(job)
+# schedule.every().day.at("00:33").do(job)
 
 
-while True:
-    schedule.run_pending()
-    time.sleep(20)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(20)
+
+job()
