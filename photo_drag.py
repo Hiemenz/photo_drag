@@ -37,8 +37,8 @@ def job():
 
     time.sleep(10)
     
-    pyautogui.click(second_tab)
     pyautogui.click(first_tab)
+    pyautogui.click(second_tab)
 
 def delete():
     print('Clicking the second tab Photos Folder')
@@ -66,3 +66,6 @@ def delete():
 #     time.sleep(20)
 
 job()
+
+time.sleep(8)
+delete()
