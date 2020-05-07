@@ -11,8 +11,8 @@ left_side = (324, 184)
 
 # photo folder tab
 second_tab = (327, 6)
-right_side_one = (900, 401)
-right_side_two = (866, 401)
+right_side_one = (900, 131)
+right_side_two = (866, 131)
 print(pyautogui.position())
 print(pyautogui.size())
 
